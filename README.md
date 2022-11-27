@@ -1,2 +1,2 @@
-# crafty-organix-frontend
-Frontend App For COMP2140 Project Crafty Organix
+# crafty-organix
+Crafty Organix App For COMP2140 Project
