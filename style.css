@@ -12,20 +12,14 @@ body {
     padding:0;
 }
 
-form {
-    /* display:grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 1px;   
-    background: #4A5568;
-    padding:50px; */
+
+form {    
     width: 350x;
     position: relative;
 
 }
 
-form h2{
-    grid-row:1;
+form h2{    
     font-size: 24px;   
     text-align: center; 
     color: #ffffff;
@@ -34,10 +28,7 @@ form h2{
 
 
 .form-field{
-    /* display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
+    
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -54,29 +45,8 @@ form h2{
 
 }
 
-.form-field:nth-child(1){
-    grid-row:2;    
-    
-}
-
-.form-field:nth-child(2){
-    grid-row:4;
-       
-    
-}
-
-.form-field:nth-child(3){
-    grid-row:3;
-    
-}
-
-
 input{
-    /* width:200px;
-    padding:10px;
-    border-radius: 5px;
-    border:#ffffff;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; */
+    
     font-family: inherit;
     width: 100%;
     outline: none;
@@ -94,14 +64,7 @@ input{
 
 
 button{
-    /* padding:10px;
-    border-radius: 5px;
-    width: 100px;
-    color:#ffffff;
-    background: green;
-    border: green;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-    font-weight: bold; */
+    
     outline: none;
     border: none;
     cursor: pointer;
