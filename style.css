@@ -1,7 +1,8 @@
 body {
     margin: 0;
     font-size: 18px;
-    font-family: "Whitney SSm A", "Whitney SSm B", "Avenir", "Segoe UI", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Playfair Display', serif;
+    /* font-family: "Whitney SSm A", "Whitney SSm B", "Avenir", "Segoe UI", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif; */
     color: #4a4a4a;
     background-color: rgb(97, 148, 211);
     display: flex;
@@ -20,7 +21,7 @@ form {
 }
 
 form h2{    
-    font-size: 24px;   
+    font-size: 30px;   
     text-align: center; 
     color: #ffffff;
 
@@ -47,7 +48,8 @@ form h2{
 
 input{
     
-    font-family: inherit;
+    font-family: 'Playfair Display', serif;
+    /* font-family: inherit; */
     width: 100%;
     outline: none;
     background-color: #fff;
