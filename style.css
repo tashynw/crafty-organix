@@ -1,17 +1,26 @@
 body {
-    margin: 80px;
+    margin: 0;
     font-size: 18px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-family: "Whitney SSm A", "Whitney SSm B", "Avenir", "Segoe UI", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #4a4a4a;
     background-color: rgb(97, 148, 211);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    padding:0;
 }
 
 form {
-    display:grid;
+    /* display:grid;
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 1px;   
     background: #4A5568;
-    padding:50px;
+    padding:50px; */
+    width: 350x;
+    position: relative;
 
 }
 
@@ -25,10 +34,22 @@ form h2{
 
 
 .form-field{
-    display:flex;
+    /* display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    position: relative;
+
     
 
 }
@@ -51,23 +72,49 @@ form h2{
 
 
 input{
-    width:200px;
+    /* width:200px;
     padding:10px;
     border-radius: 5px;
     border:#ffffff;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; */
+    font-family: inherit;
+    width: 100%;
+    outline: none;
+    background-color: #fff;
+    border-radius: 4px;
+    border: none;
+    display: block;
+    padding: 0.9rem 0.7rem;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    font-size: 17px;
+    color: #4a4a4a;
+    text-align: center;   
 
 }
 
 
 button{
-    padding:10px;
+    /* padding:10px;
     border-radius: 5px;
     width: 100px;
     color:#ffffff;
     background: green;
     border: green;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-    font-weight: bold;
+    font-weight: bold; */
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display:inline-block;
+    margin: 0 auto;
+    padding: 0.9 rem 2.5rem;
+    text-align: center;
+    background-color: #47AB11;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    font-size:17px;
+    height: 30px;
+    width: 70px;
     
 }
