@@ -1,0 +1,73 @@
+body {
+    margin: 80px;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    background-color: rgb(97, 148, 211);
+}
+
+form {
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 1px;   
+    background: #4A5568;
+    padding:50px;
+
+}
+
+form h2{
+    grid-row:1;
+    font-size: 24px;   
+    text-align: center; 
+    color: #ffffff;
+
+}
+
+
+.form-field{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.form-field:nth-child(1){
+    grid-row:2;    
+    
+}
+
+.form-field:nth-child(2){
+    grid-row:4;
+       
+    
+}
+
+.form-field:nth-child(3){
+    grid-row:3;
+    
+}
+
+
+input{
+    width:200px;
+    padding:10px;
+    border-radius: 5px;
+    border:#ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+
+}
+
+
+button{
+    padding:10px;
+    border-radius: 5px;
+    width: 100px;
+    color:#ffffff;
+    background: green;
+    border: green;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-weight: bold;
+    
+}
