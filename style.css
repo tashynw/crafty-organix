@@ -4,7 +4,8 @@ body {
     font-family: 'Playfair Display', serif;
     /* font-family: "Whitney SSm A", "Whitney SSm B", "Avenir", "Segoe UI", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif; */
     color: #4a4a4a;
-    background-color: rgb(97, 148, 211);
+    /* background-color: rgb(97, 148, 211); */
+    background-color: #e3e6f3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,6 +18,9 @@ body {
 form {    
     width: 350x;
     position: relative;
+    background-color: #1c4108;
+    padding: 100px;
+    border-radius: 4px;
 
 }
 
