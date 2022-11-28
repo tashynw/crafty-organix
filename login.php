@@ -39,5 +39,4 @@ if(mysqli_num_rows($result) === 1 && $row['email'] === $username && $row['passwo
 else{
     header ("Location: index.php?error=Incorrect Email or Password");
     exit();
-}  
-?>  
+}

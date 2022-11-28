@@ -13,3 +13,13 @@ CREATE TABLE `users` (
   UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
 
+DROP TABLE IF EXISTS `products`;
+CREATE TABLE `products` (
+  `id` int(11) NOT NULL auto_increment,
+  `name` varchar(35) NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `price` varchar(40) NOT NULL,
+  `imagelocation` varchar(40) NOT NULL,
+  PRIMARY KEY  (`id`)
+)
+
