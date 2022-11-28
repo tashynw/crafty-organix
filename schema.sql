@@ -5,13 +5,13 @@ USE crafty_organix;
 -- Table structure for `users`
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
-    `id` int(11) NOT NULL auto_increment,
-    `firstname` VARCHAR(250) NOT NULL default ' ',
-    `lastname` VARCHAR(250) NOT NULL default ' ',
-    `email` VARCHAR(50) NOT NULL default ' ',
-    `password` VARCHAR(15) NOT NULL,
-    PRIMARY KEY (`id`)
-);
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(75) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
 
 DROP TABLE IF EXISTS `products`;
 CREATE TABLE `products` (
@@ -22,5 +22,4 @@ CREATE TABLE `products` (
   `imagelocation` varchar(40) NOT NULL,
   PRIMARY KEY  (`id`)
 )
-
 
