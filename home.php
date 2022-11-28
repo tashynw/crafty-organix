@@ -2,10 +2,10 @@
 
 session_start();
 
-if (isset($_SESSION['id']) && isset($_SESSION['email'])){
+if (isset($_SESSION['email'])){
     ?>
     
-    //insert code here// 
+    
 
     <?php
 }
