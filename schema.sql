@@ -19,7 +19,7 @@ CREATE TABLE `products` (
   `name` varchar(35) NOT NULL,
   `description` varchar(255) NOT NULL,
   `price` varchar(40) NOT NULL,
-  `imagelocation` varchar(40) NOT NULL,
+  `imagelocation` varchar(255) NOT NULL,
   PRIMARY KEY  (`id`)
 )
 

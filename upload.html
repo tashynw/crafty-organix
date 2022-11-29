@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Products</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+    <script type="text/javascript" src="./js/upload.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 mt-5">
+            <h2>Upload Product</h2>
+            <br />
+            <form>
+              <div class="form-group">
+                <label>Product Name</label>
+                <input type="text" class="form-control" id="product-name" required />
+              </div>
+              <div class="form-group">
+                <label>Description</label>
+                <input type="text" class="form-control" id="description-text" required />
+              </div>
+              <div class="form-group">
+                <label>Price</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="price-text"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label>Upload Image</label>
+                <input
+                  type="file"
+                  class="form-control"
+                  id="image-file"
+                  accept="image/x-png,image/jpeg"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary" id="upload-button">Upload</button>
+              <br />
+              <p id="error-message"></p>
+            </form>
+          </div>
+        </div>
+    </div> 
+</body>
+</html>
