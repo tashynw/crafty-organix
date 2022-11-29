@@ -103,7 +103,7 @@ body{
 }
 
 #hero{
-    background-image: url(img/skincarebg.jpg);
+    background-image: url(../img/skincarebg.jpg);
     height: 90vh;
     width: 100%;
     background-position: top 25% ;

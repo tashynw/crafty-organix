@@ -1,9 +1,10 @@
-body {
+
+  body {
     margin: 0;
     font-size: 18px;
     font-family: 'Playfair Display', serif;    
     color: #4a4a4a;
-    background-image: url("natural-ingredients-to-hyd.jpg");
+    background-image: url("../img/natural-ingredients-to-hyd.jpg");
     background-size: cover;
     backdrop-filter: blur(5px);    
     display: flex;
