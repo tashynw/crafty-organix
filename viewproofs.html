@@ -5,6 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>View Payment Proofs</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script type="text/javascript" src="./js/viewproofs.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+        <br/>
+        <h2>Payment Proofs</h2>
+        <br/>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Cart</th>
+                        <th scope="col">Buyer Email</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Image Link</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!--for each proof-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </body>
 </html>

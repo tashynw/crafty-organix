@@ -6,10 +6,10 @@
     $cart = trim($input['cart']);
     $buyeremail = trim($input['buyeremail']);
     $imageLocation = trim($input['imageLocation']);
+    $proofstatus = trim($input['proofstatus']);
 
-
-    $insertQuery = $conn->prepare("INSERT INTO paymentproofs (cart, buyeremail, imagelocation) VALUES (?, ?, ?);");
-    $insertQuery->bind_param("sss", $cart, $buyeremail, $imageLocation);
+    $insertQuery = $conn->prepare("INSERT INTO paymentproofs (cart, buyeremail, imagelocation, proofstatus) VALUES (?, ?, ?, ?);");
+    $insertQuery->bind_param("ssss", $cart, $buyeremail, $imageLocation, $proofstatus);
     $result = $insertQuery->execute();
     if ($result) {
         http_response_code(200);

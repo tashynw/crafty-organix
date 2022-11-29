@@ -11,7 +11,7 @@ window.onload = function(){
     }
     const shoppingCart = localStorage.getItem("cart");
     if(!shoppingCart.length){
-        return (window.location.href = "login.html");
+        return (window.location.href = "index.html");
     }
 
     const submitButton = document.getElementById("upload-button");
@@ -45,6 +45,7 @@ window.onload = function(){
               cart: shoppingCart,
               buyeremail: user?.email,
               imageLocation: responseData?.url,
+              proofstatus: "Pending",
             }),
           });
         if (!request.ok) {
