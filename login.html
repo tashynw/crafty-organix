@@ -11,20 +11,21 @@
 
 <body>
     <div id="bg"></div>
-    <form action="./php/login.php" method="post">
+    <form>
         <h2>LOGIN</h2>
 
         <div class="form-field">
-            <input type="text" name="email" placeholder="Email address" id="email"><br>
+            <input type="text" name="email" placeholder="Email address" id="email" required><br>
         </div>
 
         <div class="form-field">
-            <input type="password" name="password" placeholder="Password" id="password"><br>
+            <input type="password" name="password" placeholder="Password" id="password" required><br>
         </div>
 
         <div class="form-field">
             <button type="submit" id="login-button">Login</button>
         </div>
+        <p id="error-message"></p>
         <p>Dont have an account? Create one <a href="./register.html">here</a></p>
     </form>
 </body>

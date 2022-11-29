@@ -6,4 +6,9 @@ window.onload = function() {
     if(!user?.email){   
         return window.location.href = "login.html"
     }
+    const signOutButton = document.getElementById("sign-out-button");
+    signOutButton.addEventListener("click", function(){
+        localStorage.setItem("user", JSON.stringify({}))
+        return window.location.href = "login.html"
+    })
 }
