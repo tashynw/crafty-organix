@@ -23,3 +23,11 @@ CREATE TABLE `products` (
   PRIMARY KEY  (`id`)
 )
 
+DROP TABLE IF EXISTS `paymentproofs`;
+CREATE TABLE `paymentproofs` (
+  `id` int(11) NOT NULL auto_increment,
+  `cart` varchar(255) NOT NULL,
+  `buyeremail` varchar(50) NOT NULL,
+  `imagelocation` varchar(255) NOT NULL,
+  PRIMARY KEY  (`id`)
+)
