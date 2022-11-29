@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Proof of Payment</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script type="text/javascript" src="./js/uploadproof.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mt-5">
+          <h2>Upload Proof of Payment</h2>
+          <br />
+          <form>
+            <div class="form-group">
+              <label>Upload Image Proof</label>
+              <input
+                type="file"
+                class="form-control"
+                id="image-file"
+                accept="image/x-png,image/jpeg"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary" id="upload-button">
+              Upload
+            </button>
+            <br />
+            <p id="error-message" class="text-danger"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
