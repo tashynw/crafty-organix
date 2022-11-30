@@ -1,0 +1,193 @@
+body{
+    font-family: 'Playfair Display', serif; 
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 85% 10%;
+    grid-gap: 10px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    width:1470px;
+}
+
+#header{
+    grid-row:1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #e3e6f3;
+    box-shadow: 0px 5px 15px rgb(0, 0, 0,0.06);
+    font-family: 'Playfair Display', serif;
+    min-height: 50px;
+}
+#header h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+
+    color: #000000;
+    float:left;
+    padding-left: 20px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.nav{
+    float: right;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;  
+    text-align: right;
+    padding-top:20px;
+    padding-left: 550px; 
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover{
+    color: #da8171;
+    padding-top: 14px;
+
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: #da8171;
+    transition: 0.3s ease;
+    
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 53%;
+    height: 3px;
+    background: #a4c11c;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    transition: 0.3s ease;
+    
+}
+
+/*gallery grid with products*/
+.gallery{
+    grid-row:2;    
+    display: grid;
+    grid-template-columns : repeat(4,1fr);
+    gap : 2rem;    
+    min-height: 0;
+    max-width: 900px;
+    width: 100%;
+    padding:20px;
+    padding-left: 90px;
+    margin-top: 60px;
+    min-height: 70vh;
+}
+
+.gallery > div{
+    border:none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    min-height : 100px;
+    max-height: 500px;
+}
+
+.content{
+    display: grid;
+    grid-template-rows: 66% 34%;
+    row-gap: 1px;
+    width: 300px;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.content img {
+    grid-row:1;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-body{
+    grid-row:2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 20% 40% 20% 20%;
+    row-gap:0px;
+}
+
+.name{
+    grid-row: 1;
+    text-align: center;
+    font-size:16px;
+}
+
+.description1{
+    grid-row: 2;
+    text-align: center;
+    font-size:14px;
+}
+
+.price{
+    grid-row: 3;
+    text-align: center;
+    font-size: 14px;
+}
+
+.product-body button{
+    grid-row: 4;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    margin:auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 45px;
+    border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    background-color: #a4c11c;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.product-body button:hover{
+    background-color: #6c7d20;
+    box-shadow: 0px 15px 20px #6f7c35;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+footer {
+    grid-row:3;
+    background: #4A5568;
+    color:#FFFFFF;
+    font-family: 'Playfair Display', serif;      
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+}
+
