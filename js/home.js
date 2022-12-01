@@ -12,6 +12,7 @@ window.onload = function() {
     const signOutButton = document.getElementById("sign-out-button");
     signOutButton.addEventListener("click", function(){
         localStorage.setItem("user", JSON.stringify({}))
+        localStorage.setItem("cart", JSON.stringify([]))
         return window.location.href = "login.html"
     })
 }
