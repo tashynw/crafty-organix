@@ -11,12 +11,21 @@ window.onload = async function (){
     const proofs = await request.json();
     for(let proof of proofs){
         //find total etc
+        const cart = JSON.parse(proof[1]);
+        let cartText = "";
+        let total=0;
+        for(let item of cart) {
+            cartText+= `
+                ${item.quantity} ${item.name},\n
+            `
+            total += parseInt(item.quantity) * parseInt(item.price)
+        }
         tableBody.innerHTML += `
             <tr>
-                <td>${proof[1]}</td>
+                <td>${cartText}</td>
                 <td>${proof[2]}</td>
-                <td>0.00</td>
-                <td><a>${proof[3]}</a></td>
+                <td>${total}</td>
+                <td><a href="${proof[3]}" target="_blank">Image</a></td>
                 <td>${proof[4]}</td>
             </tr>
         `

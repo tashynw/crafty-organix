@@ -38,7 +38,7 @@ window.onload = async function() {
                 <div class="product-body">
                     <h3 class = "name">${product[1]}</h3>
                     <p class = "description1">${product[2]}</p>
-                    <h6 class = "price">${product[3]}</h6>
+                    <h6 class = "price">$${product[3]} JMD</h6>
                     <button class="buy-1" id="remove-${i}" style="margin-top: 10px;">Remove Cart</button>
                 </div>
             </div>
