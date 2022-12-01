@@ -30,5 +30,6 @@ CREATE TABLE `paymentproofs` (
   `buyeremail` varchar(50) NOT NULL,
   `imagelocation` varchar(255) NOT NULL,
   `proofstatus` varchar(255) NOT NULL,
+  `deliveryinfo` varchar(255) NOT NULL,
   PRIMARY KEY  (`id`)
 )

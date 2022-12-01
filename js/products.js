@@ -57,7 +57,8 @@ window.onload = async function() {
                 shoppingCart.push({
                     name: product[1],
                     price: product[3],
-                    quantity: quantity.value || 0
+                    quantity: quantity.value || 0,
+                    image: product[4]
                 }) 
                 localStorage.setItem("cart", JSON.stringify(shoppingCart));
                 window.location.reload();
