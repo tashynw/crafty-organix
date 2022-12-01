@@ -13,6 +13,11 @@ window.onload = async function(){
         return (window.location.href = "login.html");
     }
     const shoppingCart = JSON.parse(localStorage.getItem("cart")); 
+    const signOutButton = document.getElementById("sign-out-button");
+    signOutButton.addEventListener("click", function(){
+        localStorage.setItem("user", JSON.stringify({}))
+        return window.location.href = "login.html"
+    })
 
     const cartTable = document.getElementById("card-table");
     let i=0;
