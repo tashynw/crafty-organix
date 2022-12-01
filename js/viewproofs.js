@@ -27,6 +27,7 @@ window.onload = async function (){
                 <td>${total}</td>
                 <td><a href="${proof[3]}" target="_blank">Image</a></td>
                 <td>${proof[4]}</td>
+                <td>${proof[5]}</td>
             </tr>
         `
     }

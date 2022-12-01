@@ -5,6 +5,10 @@ window.onload = function(){
     if(!localStorage.getItem("cart")){
         localStorage.setItem("cart", JSON.stringify([]));
     }
+    if(!localStorage.getItem("delivery-info")){
+        localStorage.setItem("delivery-info", JSON.stringify({}));
+    }
+    const deliveryInfo = JSON.parse(localStorage.getItem("delivery-info"));
     const user = JSON.parse(localStorage.getItem("user"));
     if (!user?.email) {
         return (window.location.href = "login.html");
@@ -46,6 +50,7 @@ window.onload = function(){
               buyeremail: user?.email,
               imageLocation: responseData?.url,
               proofstatus: "Pending",
+              deliveryinfo: deliveryInfo.text,
             }),
           });
         if (!request.ok) {
@@ -55,6 +60,7 @@ window.onload = function(){
         } else {
             //clear cart and push to homepage
             localStorage.setItem("cart", JSON.stringify([]));
+            localStorage.setItem("delivery-info", JSON.stringify({}));
             window.location.href = "index.html";
         }
 })

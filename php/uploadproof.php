@@ -7,9 +7,10 @@
     $buyeremail = trim($input['buyeremail']);
     $imageLocation = trim($input['imageLocation']);
     $proofstatus = trim($input['proofstatus']);
+    $deliveryinfo = trim($input['deliveryinfo']);
 
-    $insertQuery = $conn->prepare("INSERT INTO paymentproofs (cart, buyeremail, imagelocation, proofstatus) VALUES (?, ?, ?, ?);");
-    $insertQuery->bind_param("ssss", $cart, $buyeremail, $imageLocation, $proofstatus);
+    $insertQuery = $conn->prepare("INSERT INTO paymentproofs (cart, buyeremail, imagelocation, proofstatus, deliveryinfo) VALUES (?, ?, ?, ?, ?);");
+    $insertQuery->bind_param("sssss", $cart, $buyeremail, $imageLocation, $proofstatus, $deliveryinfo);
     $result = $insertQuery->execute();
     if ($result) {
         http_response_code(200);

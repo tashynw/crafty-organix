@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Shopping Cart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <link rel="stylesheet" href="./css/cart.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="./js/cart.js"></script>
+</head>
+
+<body>
+  <section id="header">
+    <div>
+      <h1>Crafty Organix</h1>
+      <div class="nav">
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="cart.html" class="active">Shopping Cart</a></li>
+          <li id="sign-out-button"><a>Sign Out</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="small-container cart-page">
+    <table id="card-table">
+      <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+      </tr>
+    </table>
+
+    <div class="total-price">
+      <table>
+        <tr id="total-sum">
+          <td>Total</td>
+        </tr>
+      </table>
+    </div>
+    Preferred Delivery Option: <input type="text" id="delivery-text"/>
+    <div class="checkout">
+      <button class="buy-2" id="checkout-button">Checkout</button>
+      <p id="error-message"></p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>Copyright 2022, Crafty Organix</p>
+    </div>
+  </footer>
+</body>
+
+</html>
