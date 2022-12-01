@@ -73,7 +73,6 @@ window.onload = async function() {
         }
         x++;
     }
-
     function ifAdded(product){
         const cart = JSON.parse(localStorage.getItem("cart"));
         for(let item of cart){
