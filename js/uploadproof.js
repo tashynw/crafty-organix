@@ -9,9 +9,9 @@ window.onload = function(){
     if (!user?.email) {
         return (window.location.href = "login.html");
     }
-    const shoppingCart = localStorage.getItem("cart");
+    const shoppingCart = JSON.parse(localStorage.getItem("cart")); 
     if(!shoppingCart.length){
-        return (window.location.href = "index.html");
+        return (window.location.href = "products.html");
     }
 
     const submitButton = document.getElementById("upload-button");
@@ -42,7 +42,7 @@ window.onload = function(){
         const request = await fetch("php/uploadproof.php", {
             method: "POST",
             body: JSON.stringify({
-              cart: shoppingCart,
+              cart: JSON.stringify(shoppingCart),
               buyeremail: user?.email,
               imageLocation: responseData?.url,
               proofstatus: "Pending",

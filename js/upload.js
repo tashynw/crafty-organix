@@ -6,6 +6,9 @@ window.onload = function () {
   if (!user?.email) {
     return (window.location.href = "login.html");
   }
+  function isNumeric(num){
+    return !isNaN(num)
+  }
   const submitButton = document.getElementById("upload-button");
   submitButton.addEventListener("click", async function (e) {
     e.preventDefault();
@@ -17,7 +20,11 @@ window.onload = function () {
       return (document.getElementById(
         "error-message"
       ).innerHTML = `Enter all fields`);
-
+    if(!isNumeric(price)){
+      return (document.getElementById(
+        "error-message"
+      ).innerHTML = `The price should be an integer, example 3000, 4500 etc`); 
+    }
     //upload pic to CDN
     const imageData = new FormData();
     imageData.append("file", imageFile);
