@@ -42,10 +42,11 @@ window.onload = async function (){
                 <td>Already reviewed</td>
             </tr>
         `
+        i++;
     }
     let x=0;
-    for(let proof of proofs){
-        if(proof[4]=="Pending"){
+    for(let proof of proofs){ 
+        if(proof[4]==="Pending"){
             const acceptButton = document.getElementById(`accept-${x}`)
             const rejectButton = document.getElementById(`reject-${x}`)
             acceptButton.addEventListener("click", async function(){
