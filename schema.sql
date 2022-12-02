@@ -21,7 +21,7 @@ CREATE TABLE `products` (
   `price` varchar(40) NOT NULL,
   `imagelocation` varchar(255) NOT NULL,
   PRIMARY KEY  (`id`)
-)
+);
 
 DROP TABLE IF EXISTS `paymentproofs`;
 CREATE TABLE `paymentproofs` (
@@ -32,4 +32,4 @@ CREATE TABLE `paymentproofs` (
   `proofstatus` varchar(255) NOT NULL,
   `deliveryinfo` varchar(255) NOT NULL,
   PRIMARY KEY  (`id`)
-)
+);
