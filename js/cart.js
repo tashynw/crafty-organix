@@ -67,16 +67,6 @@ window.onload = async function(){
         //add delivery detail to localstorage
         localStorage.setItem("delivery-info", JSON.stringify({text: deliveryInput}))
 
-        //generate invoice
-        /*const request = await fetch("https://invoice-generator.com",{
-            method: "POST",
-            body: JSON.stringify({
-                from: "Crafty Organix",
-                to: user.email,
-                items: shoppingCart
-            })
-        });*/
-
         //push to upload proof of payment page
         window.location.href = "uploadproof.html";
     })
